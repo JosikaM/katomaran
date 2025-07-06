@@ -13,7 +13,7 @@ module.exports = function (passport) {
             clientID: process.env.GITHUB_CLIENT_ID,
             clientSecret: process.env.GITHUB_CLIENT_SECRET,
             callbackURL: process.env.NODE_ENV === 'production'
-                ? 'https://katomaran-yy6g.onrender.com/api/auth/github/callback'
+                ? 'https://katomaran-2gws.onrender.com/api/auth/github/callback'
                 : 'http://localhost:5000/api/auth/github/callback',
             scope: ['user:email']
         },
