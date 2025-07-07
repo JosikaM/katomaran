@@ -35,12 +35,7 @@ app.use(passport.initialize());
 
 // CORS configuration
 const corsOptions = {
-    origin: [
-        process.env.FRONTEND_URL || 'http://localhost:3000',
-        'https://katomaran-todoapp.vercel.app',
-        'http://localhost:5173',
-        'http://localhost:3000'
-    ],
+    origin: '*',
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
     credentials: true,
     optionsSuccessStatus: 200
